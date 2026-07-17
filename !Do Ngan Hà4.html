@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoNganHa.Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = { theme: { extend: { colors: { neon: { cyan: '#00f3ff', magenta: '#ff00ff', purple: '#bc13fe', dark: '#05050a', panel: '#101018' } } } } }
+    </script>
+    <style>
+        body { 
+            background-image: url('https://drive.google.com/uc?export=view&id=1XscQe_HZWccI4GXzwQ0Vtl-82ZHO1JJP');
+            background-repeat: repeat; background-size: 200px; background-attachment: fixed;
+            background-color: #05050a; color: #d1d5db; overflow-x: hidden;
+        }
+        body::before { content: ""; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(5, 5, 10, 0.92); pointer-events: none; z-index: 0; }
+        .content-wrapper { position: relative; z-index: 1; }
+        .text-glow-cyan { text-shadow: 0 0 5px #00f3ff, 0 0 15px #00f3ff; }
+        .project-card { background: rgba(16, 16, 24, 0.85); backdrop-filter: blur(10px); border: 1px solid #1f2937; border-radius: 1.25rem; transition: 0.4s; }
+        .project-card:hover { border-color: #00f3ff; box-shadow: 0 0 20px rgba(0, 243, 255, 0.3); }
+        .data-box { background: rgba(0, 0, 0, 0.4); border: 1px solid rgba(0, 243, 255, 0.2); padding: 0.75rem; border-radius: 0.5rem; }
+        #flying-chars-container { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 2; overflow: hidden; }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    <div id="flying-chars-container"></div>
+    <div class="content-wrapper">
+
+        <nav class="sticky top-0 z-50 border-b border-gray-800 bg-neon-dark/90 backdrop-blur-md shadow-lg">
+            <div class="mx-auto max-w-7xl px-4 py-4 flex justify-between items-center">
+                <span class="font-serif text-2xl font-bold text-white text-glow-cyan">DoNganHa<span class="text-neon-cyan">.Portfolio</span></span>
+                <div class="space-x-6 text-sm font-semibold text-gray-300">
+                    <a href="#gioi-thieu" class="hover:text-neon-cyan">Giới thiệu</a>
+                    <a href="#quy-trinh" class="hover:text-neon-magenta">Quy trình</a>
+                    <a href="#du-an" class="hover:text-neon-cyan">Dự án</a>
+                    <a href="#contact" class="hover:text-neon-purple">Liên hệ</a>
+                </div>
+            </div>
+        </nav>
+
+        <header id="gioi-thieu" class="py-10">
+            <div class="max-w-5xl mx-auto mb-8 px-4"><img src="https://drive.google.com/uc?export=view&id=1Nu9Eg9HNjsA1Xq2dCWdR30G4OjZAC0lv" class="w-full h-64 object-cover rounded-2xl border border-neon-purple shadow-lg"></div>
+            <div class="mx-auto max-w-7xl px-4 flex flex-col md:flex-row items-center gap-12">
+                <img src="https://drive.google.com/uc?export=view&id=19f--yCetGRz8pkq2dpzdz9jxtkFPSy0B" class="w-40 h-40 rounded-full border-2 border-neon-cyan shadow-[0_0_20px_#00f3ff]">
+                <div>
+                    <h1 class="text-5xl font-bold text-white mb-2">Đỗ Ngân Hà</h1>
+                    <p class="text-neon-cyan font-bold">Trường Đại học Ngoại Ngữ - ĐHQGHN</p>
+                </div>
+            </div>
+        </header>
+
+        <section id="quy-trinh" class="max-w-5xl mx-auto px-4 py-16 bg-neon-panel rounded-2xl border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-8">QUY TRÌNH THỰC HIỆN</h2>
+            <div class="grid md:grid-cols-2 gap-6 text-sm text-gray-300">
+                <div class="p-4 border-l-2 border-neon-cyan bg-black/40"><h3 class="font-bold text-neon-cyan mb-1">1. Lập kế hoạch</h3><p>Xác định mục tiêu học thuật và danh mục dữ liệu cần số hóa.</p></div>
+                <div class="p-4 border-l-2 border-neon-magenta bg-black/40"><h3 class="font-bold text-neon-magenta mb-1">2. Cấu trúc hóa</h3><p>Thiết kế cấu trúc website, phân loại file bài tập và quy hoạch thư mục lưu trữ khoa học trên Google Drive.</p></div>
+                <div class="p-4 border-l-2 border-neon-purple bg-black/40"><h3 class="font-bold text-neon-purple mb-1">3. Triển khai nội dung</h3><p>Nhúng nội dung chi tiết vào mã nguồn, tuân thủ chuẩn đánh số, định dạng in đậm và liên kết chính xác.</p></div>
+                <div class="p-4 border-l-2 border-neon-cyan bg-black/40"><h3 class="font-bold text-neon-cyan mb-1">4. Kiểm chứng</h3><p>Kiểm tra khả năng truy cập các link bài tập, tinh chỉnh hiệu ứng tương tác và tính thẩm mỹ cho giao diện.</p></div>
+            </div>
+        </section>
+
+        <main id="du-an" class="max-w-5xl mx-auto px-4 py-20 space-y-12">
+            <h2 class="text-center font-serif text-3xl font-bold text-white mb-12 text-glow-cyan">Hành Trình Dự Án Học Tập</h2>
+            <!-- DỰ ÁN 01 -->
+            <div class="project-card p-8 border-l-4 border-neon-cyan"><h3 class="text-2xl font-bold text-white mb-6">📁 01. Máy tính và thiết bị ngoại vi</h3><div class="grid md:grid-cols-3 gap-4 text-sm text-gray-300"><div class="data-box"><p class="text-neon-cyan font-bold mb-1">Mục tiêu</p>Thao tác quản lý tệp tin khoa học, rèn luyện kỹ năng quản lý tài liệu.</div><div class="data-box"><p class="text-neon-magenta font-bold mb-1">Quá trình</p>Thực hành tạo, đổi tên theo quy ước (Naming Convention) và di chuyển tài liệu.</div><div class="data-box"><p class="text-neon-purple font-bold mb-1">Khó khăn</p>Mất thời gian làm quen với quy tắc đặt tên nghiêm ngặt để đồng bộ dữ liệu.</div></div><a href="https://drive.google.com/file/d/1Q1-o6zGw7yu2RRB7DKpbKfkcR5CDZ3Bi/view?usp=sharing" class="mt-6 inline-block text-neon-cyan hover:underline">Xem dự án →</a></div>
+            <!-- DỰ ÁN 02 -->
+            <div class="project-card p-8 border-l-4 border-neon-magenta"><h3 class="text-2xl font-bold text-white mb-6">🔍 02. Khai thác dữ liệu và thông tin</h3><div class="grid md:grid-cols-3 gap-4 text-sm text-gray-300"><div class="data-box"><p class="text-neon-cyan font-bold mb-1">Mục tiêu</p>Phát triển kỹ năng tìm kiếm và đánh giá thông tin học thuật từ các nguồn đáng tin cậy.</div><div class="data-box"><p class="text-neon-magenta font-bold mb-1">Quá trình</p>Nghiên cứu chủ đề thông qua toán tử nâng cao trên Google Scholar/JSTOR và lập bảng đánh giá.</div><div class="data-box"><p class="text-neon-purple font-bold mb-1">Khó khăn</p>Thẩm định độ tin cậy của tài liệu trong môi trường dữ liệu khổng lồ.</div></div><a href="https://drive.google.com/file/d/14hL5xfb1gRcMBh2vVUztMYApKQPP-xUb/view?usp=sharing" class="mt-6 inline-block text-neon-magenta hover:underline">Xem dự án →</a></div>
+            <!-- DỰ ÁN 03 -->
+            <div class="project-card p-8 border-l-4 border-neon-purple"><h3 class="text-2xl font-bold text-white mb-6">💡 03. Tổng quan Trí tuệ nhân tạo</h3><div class="grid md:grid-cols-3 gap-4 text-sm text-gray-300"><div class="data-box"><p class="text-neon-cyan font-bold mb-1">Mục tiêu</p>Làm chủ kỹ nghệ Prompt và tương tác hiệu quả với các mô hình ngôn ngữ lớn.</div><div class="data-box"><p class="text-neon-magenta font-bold mb-1">Quá trình</p>Thiết kế Prompts theo mô hình CLEAR/CREATE để học từ vựng và phân tích sắc thái nghĩa.</div><div class="data-box"><p class="text-neon-purple font-bold mb-1">Khó khăn</p>Luyện tập tư duy để điều hướng AI tạo ra kết quả chính xác theo ngữ cảnh.</div></div><a href="https://drive.google.com/file/d/1HPru9fJGiFBbmwlyiYE9Iw1Ty1nwzYk_/view?usp=sharing" class="mt-6 inline-block text-neon-purple hover:underline">Xem dự án →</a></div>
+            <!-- DỰ ÁN 04 -->
+            <div class="project-card p-8 border-l-4 border-neon-cyan"><h3 class="text-2xl font-bold text-white mb-6">👥 04. Giao tiếp & hợp tác số</h3><div class="grid md:grid-cols-3 gap-4 text-sm text-gray-300"><div class="data-box"><p class="text-neon-cyan font-bold mb-1">Mục tiêu</p>Quản lý dự án nhóm từ xa và sử dụng Google Workspace điều phối công việc.</div><div class="data-box"><p class="text-neon-magenta font-bold mb-1">Quá trình</p>Sử dụng Trello, Google Docs và sơ đồ Gantt để theo dõi tiến độ công việc nhóm.</div><div class="data-box"><p class="text-neon-purple font-bold mb-1">Khó khăn</p>Xung đột ý tưởng giữa các thành viên khi phối hợp trên nền tảng mới.</div></div><a href="https://drive.google.com/file/d/1KlYfNK8KCqiDNhTJaZ3Q1lpr7RETKAsS/view?usp=sharing" class="mt-6 inline-block text-neon-cyan hover:underline">Xem dự án →</a></div>
+            <!-- DỰ ÁN 05 -->
+            <div class="project-card p-8 border-l-4 border-neon-magenta"><h3 class="text-2xl font-bold text-white mb-6">🖼️ 05. Sáng tạo nội dung số</h3><div class="grid md:grid-cols-3 gap-4 text-sm text-gray-300"><div class="data-box"><p class="text-neon-cyan font-bold mb-1">Mục tiêu</p>Ứng dụng AI tạo sinh vào sáng tạo ấn phẩm truyền thông.</div><div class="data-box"><p class="text-neon-magenta font-bold mb-1">Quá trình</p>Sử dụng AI gợi ý kịch bản, biên tập hình ảnh/nội dung qua Canva.</div><div class="data-box"><p class="text-neon-purple font-bold mb-1">Khó khăn</p>Kết hợp hài hòa giữa ý tưởng AI và tư duy biên tập thẩm mỹ con người.</div></div><a href="https://drive.google.com/file/d/1xtC1k3m5aZSpY5t_uC_88q7tzBbmK_7L/view?usp=sharing" class="mt-6 inline-block text-neon-magenta hover:underline">Xem dự án →</a></div>
+            <!-- DỰ ÁN 06 -->
+            <div class="project-card p-8 border-l-4 border-neon-purple"><h3 class="text-2xl font-bold text-white mb-6">🛡️ 06. An toàn & Liêm chính học thuật</h3><div class="grid md:grid-cols-3 gap-4 text-sm text-gray-300"><div class="data-box"><p class="text-neon-cyan font-bold mb-1">Mục tiêu</p>Sử dụng AI có trách nhiệm, bảo mật dữ liệu và duy trì sự trung thực.</div><div class="data-box"><p class="text-neon-magenta font-bold mb-1">Quá trình</p>Viết bài luận, trích dẫn chuẩn APA/MLA và kiểm tra bằng công cụ chống đạo văn.</div><div class="data-box"><p class="text-neon-purple font-bold mb-1">Khó khăn</p>Giữ được tính nguyên bản của bài viết khi có sự hỗ trợ của AI.</div></div><a href="https://drive.google.com/file/d/10pEjgmTowOpaf_ycx-XlsaxUgjvuuC86/view?usp=sharing" class="mt-6 inline-block text-neon-purple hover:underline">Xem dự án →</a></div>
+        </main>
+
+        <section id="contact" class="py-24 bg-neon-panel border-t border-gray-800">
+            <div class="mx-auto max-w-5xl px-4 text-center">
+                <h3 class="text-2xl font-bold text-white mb-8">THÔNG TIN LIÊN HỆ</h3>
+                <div class="space-y-4 text-gray-300 text-lg">
+                    <p>📧 Email: <span class="text-neon-cyan">nganha03122007@gmail.com</span></p>
+                    <p>👤 Facebook: <a href="https://www.facebook.com/ngann.ha.239417" class="text-neon-magenta hover:underline">facebook.com/ngann.ha.239417</a></p>
+                    <p>📞 Số điện thoại: <span class="text-neon-purple font-bold">0917786882</span></p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        const container = document.getElementById('flying-chars-container');
+        const chars = ['A', '文', 'Ω', 'Б', '가', '∑', 'あ', 'ع', 'ñ', 'Ж', '語', 'đ', 'Δ', 'ç', 'λ', '字', 'ש', 'א', 'ก'];
+        window.addEventListener('scroll', () => {
+            if (Math.random() > 0.8) {
+                const el = document.createElement('div');
+                el.innerText = chars[Math.floor(Math.random()*chars.length)];
+                el.className = 'absolute text-neon-cyan opacity-20 pointer-events-none text-[14px] md:text-[16px]';
+                el.style.textShadow = '0 0 8px currentColor';
+                el.style.left = Math.random()*100 + 'vw';
+                el.style.top = Math.random()*100 + 'vh';
+                container.appendChild(el);
+                setTimeout(() => el.remove(), 1000);
+            }
+        });
+    </script>
+</body>
+</html>
